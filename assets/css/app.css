@@ -11,6 +11,11 @@
     font-family: "Lalezar", sans-serif;
 }
 
+.dark-mode {
+    background-color: #000000;
+    color: rgba(36, 176, 195, 100%);
+}
+
 body {
     font-family: "Jua", sans-serif;
     margin: 0;
@@ -68,7 +73,7 @@ header .navbar .nav-list li:hover a {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .greet-p {
@@ -268,7 +273,7 @@ header .navbar .nav-list li:hover a {
     }
 
     /* Contact */
-    #contact {
-        padding-bottom: 300px;
+    #contact { 
+        padding-bottom: 250px;
     }
 }
