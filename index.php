@@ -76,21 +76,15 @@
             <div class="blog-break"></div>
             
             <div class="blog-container">
+                <?php
+                while ($art = $result->fetch_assoc()) {
+                ?>
                 <article>
-                    <h2 class="Lalezar"><?php echo $judul1; ?></h2>
-                    <p><?php echo $desk1; ?></p>
-                    <a href="<?php echo $link1; ?>">Baca selengkapnya</a>
+                    <h2 class="Lalezar"><?php echo $art['Judul']; ?></h2>
+                    <p><?php echo $art['Deskripsi']; ?></p>
+                    <a href="<?php echo $art['Url']; ?>">Baca selengkapnya</a>
                 </article>
-                <article>
-                    <h2 class="Lalezar"><?php echo $judul2; ?></h2>
-                    <p><?php echo $desk2; ?></p>
-                    <a href="<?php echo $link2; ?>">Baca selengkapnya</a>
-                </article>
-                <article>
-                    <h2 class="Lalezar"><?php echo $judul3; ?></h2>
-                    <p><?php echo $desk3; ?></p>
-                    <a href="<?php echo $link3; ?>">Baca selengkapnya</a>
-                </article>
+                <?php } ?>
             </div>
 
             <div class="blog-break"></div>
